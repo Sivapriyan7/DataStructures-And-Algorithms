@@ -22,4 +22,3 @@ class ScoreOfString {
         System.out.println(returned_score);
     }
 }
-

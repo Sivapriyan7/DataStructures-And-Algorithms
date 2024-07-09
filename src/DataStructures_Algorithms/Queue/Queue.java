@@ -21,7 +21,6 @@ public class Queue {
         {
             System.out.println("Queue is Full!");
         }
-
     }
 
     public void Dequeue()
@@ -36,8 +35,6 @@ public class Queue {
         {
             System.out.println("Queue is Empty!");
         }
-
-
     }
 
     public void show()
