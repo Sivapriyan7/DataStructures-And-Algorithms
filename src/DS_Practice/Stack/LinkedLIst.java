@@ -63,9 +63,25 @@ class LinkedLIst {
             {
                 n = n.next;
             }
+            node.next = n.next;
+            n.next = node;
+        }
+    }
+
+    public void deleteAtFirst()
+    {
+        head = head.next;
+    }
+
+    public void deleteAt(int index)
+    {
+        if (index==0)
+        {
+            deleteAtFirst();
+        }
+        else {
 
         }
-
     }
 
     public void show()
@@ -90,6 +106,7 @@ class LinkedLIst {
         list.add(24);
         list.add(25);
         list.addAtFirst(20);
+        list.addAt(2,221);
         list.show();
     }
 }
