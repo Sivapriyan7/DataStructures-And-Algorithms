@@ -80,7 +80,12 @@ class LinkedLIst {
             deleteAtFirst();
         }
         else {
-
+            Node n = head;
+            for (int i=0; i<index-1;i++)
+            {
+                n = n.next;
+            }
+            n.next = n.next.next;
         }
     }
 
@@ -107,6 +112,9 @@ class LinkedLIst {
         list.add(25);
         list.addAtFirst(20);
         list.addAt(2,221);
+        list.deleteAt(2);
+        list.addAt(2,100);
+        list.addAt(3,200);
         list.show();
     }
 }
