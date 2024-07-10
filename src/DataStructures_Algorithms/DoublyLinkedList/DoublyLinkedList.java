@@ -67,8 +67,7 @@ class GFG {
         else {
             node current = head;
             int currPosition = 1;
-            while (current != null
-                    && currPosition < position) {
+            while (current != null && currPosition < position) {
                 current = current.next;
                 currPosition++;
             }

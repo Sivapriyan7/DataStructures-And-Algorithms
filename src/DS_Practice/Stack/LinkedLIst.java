@@ -89,6 +89,20 @@ class LinkedLIst {
         }
     }
 
+    public void revereseLinkedList()
+    {
+        Node next=null;
+        Node prev=null;
+        while (head!=null)
+        {
+            next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
+        }
+        head = prev;
+
+    }
     public void show()
     {
         Node n = head;
@@ -115,6 +129,8 @@ class LinkedLIst {
         list.deleteAt(2);
         list.addAt(2,100);
         list.addAt(3,200);
+        list.show();
+        list.revereseLinkedList();
         list.show();
     }
 }
