@@ -59,6 +59,7 @@ class DoublyLinkedList {
         }
         System.out.print("<-->"+n.data);
         System.out.print("<-->null");
+        System.out.println();
     }
 
     public void insertAt(int index,int data)
@@ -88,27 +89,32 @@ class DoublyLinkedList {
     }
     public void deleteAt(int index)
     {
+//        System.out.println("index val "+index);
         if(index==1)
         {
+//            System.out.println("true");
             deleteFirst();
         }
-
-        Node current = head;
-        for (int i=1; i<index;i++)
-        {
-            current = current.next;
-        }
-
-        if(current.next==null)
-        {
-            deleteLast();
-        }
         else {
-            current.prev.next = current.next;
-            current.next.prev = current.prev;
-            current.next = null;
-            current.prev = null;
+            Node current = head;
+            for (int i=1; i<index;i++)
+            {
+                current = current.next;
+            }
+
+            if(current==tail)
+            {
+                deleteLast();
+            }
+            else {
+                current.prev.next = current.next;
+                current.next.prev = current.prev;
+                current.next = null;
+                current.prev = null;
+            }
+
         }
+
 
     }
     public void deleteFirst()
@@ -122,6 +128,23 @@ class DoublyLinkedList {
         tail.next = null;
     }
 
+    public void reverseDll()
+    {
+        Node temp=head;
+        Node next;
+        Node prev=null;
+        while (head!=null)
+        {
+            next = head.next;
+            head.next = head.prev;
+            head.prev = next;
+            head = next;
+        }
+        head = tail;
+        tail = temp;
+        System.out.println("Linked List Reversed");
+    }
+
     public static void main(String[] args) {
         DoublyLinkedList DlList = new DoublyLinkedList();
         DlList.addAtFirst(11);
@@ -130,11 +153,14 @@ class DoublyLinkedList {
         DlList.addAtFirst(14);
         DlList.addAtLast(22);
         DlList.insertAt(6,200);
-        DlList.deleteAt(5);
+        DlList.show();
+//        DlList.deleteAt(4);
 //        DlList.deleteFirst();
 //        DlList.deleteFirst();
 //        DlList.deleteLast();
+        DlList.reverseDll();
         DlList.show();
+
     }
 
 }
