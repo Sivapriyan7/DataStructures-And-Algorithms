@@ -1,4 +1,4 @@
-package DS_Practice.Stack;
+package DS_Practice.DoublyLinkedList;
 
 class Node
 {
