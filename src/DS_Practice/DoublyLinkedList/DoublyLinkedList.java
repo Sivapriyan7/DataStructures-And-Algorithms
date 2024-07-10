@@ -112,10 +112,7 @@ class DoublyLinkedList {
                 current.next = null;
                 current.prev = null;
             }
-
         }
-
-
     }
     public void deleteFirst()
     {
@@ -160,7 +157,5 @@ class DoublyLinkedList {
 //        DlList.deleteLast();
         DlList.reverseDll();
         DlList.show();
-
     }
-
 }
