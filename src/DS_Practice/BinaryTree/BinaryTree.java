@@ -243,6 +243,23 @@ class BinaryTree {
             }
         }
     }
+    public void invertTree()
+    {
+        invertTree(root);
+    }
+
+    public void invertTree(Node root)
+    {
+        if (root==null)
+            return;
+
+        Node temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+
+        invertTree(root.left);
+        invertTree(root.right);
+    }
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         tree.insert(200);
@@ -274,6 +291,10 @@ class BinaryTree {
         System.out.println();
         tree.deleteElement(60);
         tree.existinTree(60);
+        System.out.println();
+        tree.printLevelOrder();
+        System.out.println();
+        tree.invertTree();
         System.out.println();
         tree.printLevelOrder();
         //        tree.LeftSum();
