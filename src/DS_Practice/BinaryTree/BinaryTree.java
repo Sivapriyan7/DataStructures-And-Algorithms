@@ -2,6 +2,7 @@ package DS_Practice.BinaryTree;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.FilterOutputStream;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -246,6 +247,7 @@ class BinaryTree {
     public void invertTree()
     {
         invertTree(root);
+
     }
 
     public void invertTree(Node root)
