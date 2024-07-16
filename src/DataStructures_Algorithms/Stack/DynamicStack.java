@@ -89,6 +89,7 @@ class DynamicStack {
             stack[top] = 0;
             shrink();
         }
+
         return data;
     }
 
