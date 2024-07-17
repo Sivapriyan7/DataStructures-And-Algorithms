@@ -1,6 +1,4 @@
-package OOPS.Singleton;
-
-import javax.swing.*;
+package OOPS.Singleton_Class;
 
 public class Singleton {
     private int num = 0;

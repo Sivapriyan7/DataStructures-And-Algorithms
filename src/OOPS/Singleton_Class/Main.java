@@ -1,4 +1,4 @@
-package OOPS.Singleton;
+package OOPS.Singleton_Class;
 
 public class Main {
 

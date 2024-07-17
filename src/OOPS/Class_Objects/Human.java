@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Class_Objects;
 
 public class Human {
 
