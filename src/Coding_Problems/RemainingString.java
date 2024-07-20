@@ -1,7 +1,7 @@
 package Coding_Problems;
 
-class Solution {
-    public String printString(String s, char ch, int count) {
+class RemainingString {
+    public static String printString(String s, char ch, int count) {
         // code here
         int val = 0;
         for(int i=0;i<s.length();i++)
@@ -25,7 +25,7 @@ class Solution {
 
     public static void main(String[] args)
     {
-        Solution s = new Solution();
+        RemainingString s = new RemainingString();
         System.out.print(s.printString("Thisisdemostring",'i',3));
 
     }
