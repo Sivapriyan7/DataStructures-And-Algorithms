@@ -262,6 +262,61 @@ class BinaryTree {
         invertTree(root.left);
         invertTree(root.right);
     }
+
+//    public boolean isBST()
+//    {
+//        return checkBST(root);
+//    }
+
+    int prev_val = 0;
+    public boolean checkBST(Node root) {
+
+        if(root != null)
+        {
+            checkBST(root.left);
+            System.out.println("prev "+prev_val +" root "+root.data);
+            if (root.data > prev_val && prev_val!=0)
+            {
+                return false;
+            }
+            else {
+                prev_val = root.data;
+            }
+            checkBST(root.right);
+        }
+        return true;
+    }
+
+    Node prev = null;
+    private boolean isBSTUtil(Node node) {
+        if (node != null) {
+            // Traverse the left subtree
+            if (!isBSTUtil(node.left)) {
+                return false;
+            }
+
+            // Check if the current node's value is greater than the previous node's value
+            if (prev != null && node.data <= prev.data) {
+                return false;
+            }
+
+            // Update the previous node
+            prev = node;
+
+            // Traverse the right subtree
+            return isBSTUtil(node.right);
+        }
+
+        return true;
+    }
+
+    // Function to check if the tree is a BST
+    public boolean isBST() {
+
+        return isBSTUtil(root);
+    }
+
+
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         tree.insert(200);
@@ -277,28 +332,30 @@ class BinaryTree {
         System.out.print("InOrder:");
         tree.inOrder();
         System.out.println();
-        System.out.print("PreOrder:");
-        tree.preOrder();
-        System.out.println();
-        System.out.print("PostOrder:");
-        tree.postOrder();
-        System.out.println();
-        tree.Height();
-        System.out.println();
-        tree.Sum();
-        System.out.println();
-        tree.Max();
-        System.out.println();
-        tree.existinTree(60);
-        System.out.println();
-        tree.deleteElement(60);
-        tree.existinTree(60);
-        System.out.println();
-        tree.printLevelOrder();
-        System.out.println();
-        tree.invertTree();
-        System.out.println();
-        tree.printLevelOrder();
+//        System.out.print("PreOrder:");
+//        tree.preOrder();
+//        System.out.println();
+//        System.out.print("PostOrder:");
+//        tree.postOrder();
+//        System.out.println();
+//        tree.Height();
+//        System.out.println();
+//        tree.Sum();
+//        System.out.println();
+//        tree.Max();
+//        System.out.println();
+//        tree.existinTree(60);
+//        System.out.println();
+//        tree.deleteElement(60);
+//        tree.existinTree(60);
+//        System.out.println();
+//        tree.printLevelOrder();
+//        System.out.println();
+//        tree.invertTree();
+//        System.out.println();
+//        tree.printLevelOrder();
+//        System.out.println();
+        System.out.println(tree.isBST());
         //        tree.LeftSum();
 
     }
