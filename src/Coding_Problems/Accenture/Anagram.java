@@ -3,7 +3,6 @@ package Coding_Problems.Accenture;
 import java.util.Arrays;
 
 public class Anagram {
-
     public static boolean isAnagram(String s1,String s2)
     {
         if(s1.length() != s2.length())
