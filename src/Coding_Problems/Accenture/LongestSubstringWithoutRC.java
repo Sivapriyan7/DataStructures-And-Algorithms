@@ -27,7 +27,7 @@ public class LongestSubstringWithoutRC {
 
     public static void main(String[] args) {
 
-        String str = "asddddddfsdfsfsfqw";
+        String str = "asdddd";
         System.out.println(Longestsubstring(str));
     }
 }
