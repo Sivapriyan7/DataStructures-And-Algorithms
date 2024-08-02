@@ -1,8 +1,8 @@
-package DataStructures_Algorithms.Sorting_Algorithms;
+package Coding_Problems.Accenture;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+class MinSwapSelectionSort {
 
     public static void main(String[] args) {
         int[] nums = {12,2,45,21,32};
@@ -10,7 +10,7 @@ public class SelectionSort {
         int temp = 0;
         int minIndex = -1;
         int swapcount = 0;
-        System.out.println("Before Sorting "+Arrays.toString(nums));
+        System.out.println("Before Sorting "+ Arrays.toString(nums));
 
         for(int i=0; i<size-1; i++)
         {
