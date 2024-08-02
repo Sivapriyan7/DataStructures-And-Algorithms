@@ -11,9 +11,7 @@ public class MaxParkingLot {
         for (int i = 0; i < n; i++) {
             if (arr[i] == 'S') {
                 currentCars++;  // Increment current cars count for each empty slot
-                if (currentCars > maxCars) {
-                    maxCars = currentCars;  // Update max cars if current is greater
-                }
+                maxCars = Math.max(currentCars,maxCars);
             } else {
                 currentCars = 0;  // Reset current cars count when an occupied slot is found
             }
