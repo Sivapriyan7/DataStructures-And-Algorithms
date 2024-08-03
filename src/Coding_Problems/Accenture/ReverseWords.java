@@ -20,8 +20,20 @@ public class ReverseWords {
        return result.substring(0,result.length()-1);
     }
 
+    public static String reverseWords2(String str)
+    {
+        String[] str_arr = str.split(" ");
+        String result = "";
+        for (int i=str_arr.length-1; i>=0; i--)
+        {
+            result += str_arr[i] +" ";
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
-        String str = "Welcome to Code";
+        String str = "Welcome, to Code!";
         System.out.println(reverseWords(str));
+        System.out.println(reverseWords2(str));
     }
 }
