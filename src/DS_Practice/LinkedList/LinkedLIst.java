@@ -89,6 +89,18 @@ class LinkedLIst {
         }
     }
 
+    public int middleElement()
+    {
+        Node slow = head;
+        Node fast = head;
+        while (fast!=null && fast.next!=null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow.data;
+    }
+
     public void revereseLinkedList()
     {
         Node next=null;
@@ -132,5 +144,7 @@ class LinkedLIst {
         list.show();
         list.revereseLinkedList();
         list.show();
+        System.out.println();
+        System.out.println("Middle Element : "+list.middleElement());
     }
 }
