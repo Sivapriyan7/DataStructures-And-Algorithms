@@ -101,6 +101,22 @@ class LinkedLIst {
         return slow.data;
     }
 
+    public boolean containsCyclic()
+    {
+        Node slow = head;
+        Node fast = head;
+        while (fast!= null && fast.next!=null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void revereseLinkedList()
     {
         Node next=null;
@@ -146,5 +162,6 @@ class LinkedLIst {
         list.show();
         System.out.println();
         System.out.println("Middle Element : "+list.middleElement());
+        System.out.println("Contains cyclic : "+list.containsCyclic());
     }
 }
