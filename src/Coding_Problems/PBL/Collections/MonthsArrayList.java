@@ -21,6 +21,7 @@ public class MonthsArrayList {
         months.add("September");
         months.add("October");
         months.add("November");
+
         months.add("December");
 
         // Print the contents of the ArrayList
