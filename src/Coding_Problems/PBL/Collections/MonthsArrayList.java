@@ -8,6 +8,7 @@ public class MonthsArrayList {
         // Create an ArrayList to store the months of the year
         ArrayList<String> months = new ArrayList<>();
 
+
         // Add all months of the year to the ArrayList
         months.add("January");
         months.add("February");
