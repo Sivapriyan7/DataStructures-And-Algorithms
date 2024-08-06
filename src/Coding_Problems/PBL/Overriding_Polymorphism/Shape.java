@@ -14,10 +14,13 @@ public class Shape {
     // Main method to test the functionalities
     public static void main(String[] args) {
         // Create objects of Circle, Triangle, and Square using Shape references
+        Shape s1 = new Shape();
         Shape c = new Circle();
         Shape t = new Triangle();
         Shape s = new Square();
 
+        s1.draw();
+        s1.erase();
         // Call draw and erase methods using each object
         c.draw();
         c.erase();
