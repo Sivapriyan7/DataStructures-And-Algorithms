@@ -1,4 +1,4 @@
-package wipro.Packages;
+package Coding_Problems.PBL.wipro.Packages;
 
 public class Foundation {
     private int var1;          // private variable

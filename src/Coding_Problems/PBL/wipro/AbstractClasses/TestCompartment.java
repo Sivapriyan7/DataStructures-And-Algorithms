@@ -16,12 +16,15 @@ public class TestCompartment {
             switch (randomNum) {
                 case 1:
                     compartments[i] = new FirstClass();
+
                     break;
                 case 2:
                     compartments[i] = new Ladies();
+
                     break;
                 case 3:
                     compartments[i] = new General();
+
                     break;
                 case 4:
                     compartments[i] = new Luggage();

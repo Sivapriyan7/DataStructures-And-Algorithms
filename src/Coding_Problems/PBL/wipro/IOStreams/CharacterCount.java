@@ -1,4 +1,4 @@
-package wipro.IOStreams;
+package Coding_Problems.PBL.wipro.IOStreams;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package wipro.Packages.automobilesecondprogram;
+package Coding_Problems.PBL.wipro.Packages.automobilesecondprogram;
 
 public class TestVehicle {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package wipro.Interface.music.String;
+package Coding_Problems.PBL.wipro.Interface.music.String;
 
 public class Veena implements Playable {
     @Override

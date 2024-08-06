@@ -1,4 +1,4 @@
-package wipro.Packages.automobile;
+package Coding_Problems.PBL.wipro.Packages.automobile;
 
 public class Main {
     public static void main(String[] args) {

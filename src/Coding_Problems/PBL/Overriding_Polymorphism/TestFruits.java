@@ -11,5 +11,6 @@ public class TestFruits {
         Orange orange = new Orange("Orange", "tangy", "small");
         // Invoke the eat method
         orange.eat();
+
     }
 }
