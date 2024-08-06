@@ -7,7 +7,6 @@ public class Employee {
     private String gender;
     private float salary;
 
-
     // Constructor
     public Employee(int empId, String empName, String email, String gender, float salary) {
         this.empId = empId;
