@@ -24,7 +24,7 @@ public class TestEmployeeManagement {
         // Delete an employee
         employeeDB.deleteEmployee(2);
 
-        // Display pay slips again to see the effect of deletion
+        // Display payslips again to see the effect of deletion
         System.out.println(employeeDB.showPaySlip(2)); // After deletion
         System.out.println(employeeDB.showPaySlip(3)); // Still exists
     }
