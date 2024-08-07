@@ -1,13 +1,15 @@
 package Coding_Problems.PBL.Collections;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class MonthsArrayList {
 
     public static void main(String[] args) {
         // Create an ArrayList to store the months of the year
-        ArrayList<String> months = new ArrayList<>();
-
+        List<String> months = new LinkedList<>();
+//        List<String> months = new ArrayList<>();
 
         // Add all months of the year to the ArrayList
         months.add("January");
