@@ -183,6 +183,7 @@ public class TicketBooking
             System.out.println("-------------------------");
         }
     }
+
     public static void displayWaiting()
     {
         System.out.println("-------------------------");

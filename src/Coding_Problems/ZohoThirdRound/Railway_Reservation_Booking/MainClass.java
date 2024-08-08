@@ -1,5 +1,4 @@
 package Coding_Problems.ZohoThirdRound.Railway_Reservation_Booking;
-
 import java.util.Scanner;
 
 public class MainClass
