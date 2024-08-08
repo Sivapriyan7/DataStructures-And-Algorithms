@@ -9,7 +9,7 @@ public class Passenger {
     private String tickettype;
     private int seatnumber;
 
-    public Passenger(String name, int age, char preference, String tickettype, int seatnumber) {
+    public Passenger(String name, int age, char preference) {
         this.id = ++idprovider;
         this.name = name;
         this.age = age;

@@ -18,10 +18,26 @@ public class TicketCancelling extends TicketBooking{
             if (p.getid()==id)
             {
                 cancel(p);
+                return "Sucess";
             }
         }
-
-
+        for (Passenger p : racQueue)
+        {
+            if (p.getid()==id)
+            {
+                cancel(p);
+                return "Sucess";
+            }
+        }
+        for (Passenger p : waitingQueue)
+        {
+            if (p.getid()==id)
+            {
+                cancel(p);
+                return "Sucess";
+            }
+        }
+        return "Invalid ID";
     }
 
     public static void cancel(Passenger p)
