@@ -67,6 +67,16 @@ public class TicketBooking {
         System.out.println("Lower Berth - "+(berthlimit-lowerlist.size()));
     }
 
+    public static void displayTickets()
+    {
+        System.out.println("-----------------------------------------");
+        for (Passenger p : confirmedlist)
+        {
+            System.out.println(p.toString());
+            System.out.println("-----------------------------------------");
+        }
+    }
+
     public static boolean checkAvailability(Passenger p)
     {
         Map<Integer,Character> map = TicketCancelling.getSeatNumberWithBerth();
