@@ -19,7 +19,6 @@ public class TicketBooking
     static ArrayList<Passenger> middleList = new ArrayList<Passenger>();
     static ArrayList<Passenger> lowerList = new ArrayList<Passenger>();
 
-
     static Queue<Passenger> racQueue = new LinkedList<Passenger>();
     static Queue<Passenger> waitingQueue = new LinkedList<Passenger>();
 
