@@ -1,4 +1,4 @@
-package Coding_Problems.Console_Applications_Round3.Railway_Reservation_Booking;
+package Coding_Problems.ZohoThirdRound.Railway_Reservation_Booking;
 
 
 public class Passenger
