@@ -1,3 +1,5 @@
+package Leetcode_Questions;
+
 public class BinaryToDecimal {
     public static void main(String args[])
     {
