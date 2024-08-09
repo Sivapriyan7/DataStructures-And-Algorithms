@@ -18,6 +18,7 @@ public class Patterns {
         pattern10(5);
         pattern28(5);
         pattern29(5);
+        pattern30(10);
 
     }
 
@@ -35,6 +36,14 @@ public class Patterns {
                 System.out.print("*");
             }
             System.out.println();
+        }
+    }
+
+    public static void pattern30(int n)
+    {
+        for (int row=1; row<=n*2; row++)
+        {
+
         }
     }
 
