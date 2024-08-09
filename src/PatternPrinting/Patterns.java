@@ -6,18 +6,18 @@ public class Patterns {
 //        pattern29(5);
 //        patternChar(5);
 
-        pattern1(5);
-        pattern2(5);
-        pattern3(5);
-        pattern4(5);
-        pattern5(5);
-        pattern6(5);
-        pattern7(5);
-        pattern8(5);
-        pattern9(5);
-        pattern10(5);
-        pattern28(5);
-        pattern29(5);
+//        pattern1(5);
+//        pattern2(5);
+//        pattern3(5);
+//        pattern4(5);
+//        pattern5(5);
+//        pattern6(5);
+//        pattern7(5);
+//        pattern8(5);
+//        pattern9(5);
+//        pattern10(5);
+//        pattern28(5);
+//        pattern29(5);
         pattern30(10);
 
     }
@@ -41,9 +41,43 @@ public class Patterns {
 
     public static void pattern30(int n)
     {
-        for (int row=1; row<=n*2; row++)
+        int row,col;
+        for (row=1; row<=n; row++)
         {
-
+            for (int space=n-row; space>=1; space--)
+            {
+                System.out.print(" ");
+            }
+            for (col=1; col<=row; col++)
+            {
+                if(col==10)
+                {
+                    System.out.print(1);
+                }
+                else {
+                    System.out.print(col+"");
+                }
+            }
+            for (int right=col-2; right>=1; right--)
+                System.out.print(right);
+            System.out.println();
+        }
+        int num;
+        for (row=1; row<=n-1; row++)
+        {
+            for (int space=1; space<=row; space++)
+            {
+                System.out.print(" ");
+            }
+            for (num=1; num<=n-row; num++)
+            {
+                System.out.print(num);
+            }
+            for (int right=num-2; right>=1; right--)
+            {
+                System.out.print(right);
+            }
+            System.out.println();
         }
     }
 
