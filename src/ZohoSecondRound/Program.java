@@ -22,7 +22,6 @@ public class Program {
                 System.out.print(result);
                 System.out.println();
             }
-
         }
         pointer = 0;
         index = pointer+1;
