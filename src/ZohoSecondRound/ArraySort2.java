@@ -37,7 +37,7 @@ public class ArraySort2 {
     }
 
     public static void main(String[] args) {
-        int[] A1 = {2,4,6,8,12};
+        int[] A1 = {2,4,6,8};
         int[] A2 = {1,3,5,7};
         sortarr(A1,A2);
     }
