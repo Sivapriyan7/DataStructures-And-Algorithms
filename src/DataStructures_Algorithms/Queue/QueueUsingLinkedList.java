@@ -21,7 +21,9 @@ class QNode {
 class Queuel {
     QNode front, rear;
 
-    public Queuel() { this.front = this.rear = null; }
+    public Queuel() {
+        this.front = this.rear = null;
+    }
 
     // Method to add an key to the queue.
     void enqueue(int key)
@@ -53,6 +55,7 @@ class Queuel {
         // Store previous front and move front one node
         // ahead
         QNode temp = this.front;
+        System.out.println("Dequeue Element : "+temp.key);
         this.front = this.front.next;
 
         // If front becomes NULL, then change rear also as
