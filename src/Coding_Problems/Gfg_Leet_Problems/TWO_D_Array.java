@@ -23,6 +23,5 @@ public class TWO_D_Array {
             }
             System.out.println();
         }
-
     }
 }

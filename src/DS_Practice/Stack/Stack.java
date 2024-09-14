@@ -7,6 +7,7 @@ class Runner{
         stack.push(232);
         System.out.println(stack.pop());
         stack.push(323);
+        stack.push(323);
         System.out.println(stack.peek());
         System.out.println(stack.pop());
         System.out.println(stack.peek());
