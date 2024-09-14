@@ -58,7 +58,7 @@ public class Queue {
 
     public boolean isFull()
     {
-        return getSize()==5;
+        return getSize()== queue.length;
     }
 
 }
