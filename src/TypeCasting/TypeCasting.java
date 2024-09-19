@@ -5,7 +5,7 @@ import javax.xml.transform.Source;
 public class TypeCasting {
 
     public static void main(String[] args) {
-
+//-----------------------------------------------------------------------------------------------------------------------------------
         //Integer to Character
         int in_num = 2;
         char ch_num = (char) (in_num+'0');
@@ -34,6 +34,7 @@ public class TypeCasting {
         String str_val3 = "332434";
         int in_val3 = Integer.parseInt(str_val3);
         System.out.println(in_val3+1);
+//------------------------------------------------------------------------------------------------------------------------------------
     }
 }
 
