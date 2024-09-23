@@ -95,7 +95,6 @@ class BinaryTree {
         System.out.println("Sum of Tree Elements: "+SumofTree(root));
     }
 
-
     public void Max()
     {
         System.out.println("Max Element of Tree: "+MaxofTree(root));
@@ -206,6 +205,7 @@ class BinaryTree {
             return root.data == data || inLeft || inRight;
         }
     }
+
 
     public void revreseBSTree(Node root)
     {
