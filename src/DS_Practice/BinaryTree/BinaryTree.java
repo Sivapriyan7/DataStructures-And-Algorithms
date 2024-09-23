@@ -42,10 +42,7 @@ class BinaryTree {
         return root;
     }
 
-    public void inOrder()
-    {
-        inOrderRec(root);
-    }
+    public void inOrder(){inOrderRec(root);}
 
     public void preOrder()
     {
@@ -328,7 +325,7 @@ class BinaryTree {
         tree.insert(60);
         tree.insert(105);
         tree.insert(115);
-//        tree.insert(30);
+//      tree.insert(30);
         System.out.print("InOrder:");
         tree.inOrder();
         System.out.println();

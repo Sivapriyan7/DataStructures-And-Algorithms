@@ -11,7 +11,6 @@ class Node{
         this.data = data;
     }
 }
-
 class Graph {
 
     ArrayList<LinkedList<Node>> alist;
