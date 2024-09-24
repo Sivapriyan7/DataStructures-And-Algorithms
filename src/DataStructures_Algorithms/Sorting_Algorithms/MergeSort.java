@@ -13,7 +13,6 @@ public class MergeSort {
             mergeSort(arr,mid+1,r);
             merge(arr,l,mid,r);
         }
-
     }
 
     private static void merge(int[] arr, int l, int mid, int r) {
@@ -32,6 +31,9 @@ public class MergeSort {
         {
             rArr[x] = arr[mid+1+x];
         }
+
+        System.out.println("left arr "+Arrays.toString(lArr));
+        System.out.println("right arr "+Arrays.toString(rArr));
 
         int i=0;
         int j=0;
