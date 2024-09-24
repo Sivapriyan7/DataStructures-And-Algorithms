@@ -73,7 +73,6 @@ public class MergeSort {
         int[] arr = {12, 2, 45, 21, 32};
         System.out.println("Before Sorting " + Arrays.toString(arr));
 
-
         mergeSort(arr,0,arr.length-1);
 
         System.out.println("After Sorting "+Arrays.toString(arr));

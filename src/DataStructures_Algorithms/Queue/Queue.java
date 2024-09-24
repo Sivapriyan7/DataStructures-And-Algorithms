@@ -9,14 +9,12 @@ class Runner {
         q.Enqueue(5);
         q.Enqueue(5);
         q.Dequeue();
-//        q.Dequeue();
-//        q.Dequeue();
-//        q.Dequeue();
+        //q.Dequeue();
+        //q.Dequeue();
+        //q.Dequeue();
         q.show();
     }
 }
-
-
 
 class Queue {
 
@@ -32,8 +30,8 @@ class Queue {
             queue[rear] = data;
             rear = (rear+1)%5;
             size++;
-//        System.out.println("size "+size);
-//        System.out.println("val "+queue[size-1]);
+            //System.out.println("size "+size);
+            //System.out.println("val "+queue[size-1]);
         }
         else
         {
