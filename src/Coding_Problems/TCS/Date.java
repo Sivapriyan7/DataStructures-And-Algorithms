@@ -24,6 +24,13 @@ public class Date {
         months.put("october",10);
         months.put("november",11);
         months.put("december",12);
+        for (int i=0; i<date.length(); i++)
+        {
+            if(date.charAt(i)-'0'>=0 && date.charAt(i)-'0'<=9)
+            {
+                System.out.println(date.charAt(i));
+            }
+        }
 
         str_date[1] = (months.get(str_date[1]).toString());
         int sum = 0;
