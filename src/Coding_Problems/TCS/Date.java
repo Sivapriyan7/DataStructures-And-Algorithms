@@ -11,6 +11,7 @@ public class Date {
         String[] str_date = date.split(" ");
 
         HashMap<String,Integer> months = new HashMap<>();
+
         months.put("january",1);
         months.put("february",2);
         months.put("march",3);
