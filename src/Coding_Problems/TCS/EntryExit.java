@@ -15,6 +15,4 @@ public class EntryExit {
         }
         System.out.println(max);
     }
-
-
 }
