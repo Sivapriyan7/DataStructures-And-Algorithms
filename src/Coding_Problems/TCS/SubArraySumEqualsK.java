@@ -16,6 +16,7 @@ public class SubArraySumEqualsK {
                 arr[i] = sc.nextInt();
             }
             int target = sc.nextInt();
+//            System.out.println("target "+target);
             int sub_arr_sum = 0;
             int count=0;
             for (int i=0; i<arr.length; i++)
@@ -25,12 +26,18 @@ public class SubArraySumEqualsK {
                     sub_arr_sum = 0;
                     for (int k=i; k<=j; k++)
                     {
-                        System.out.print(arr[k]+" ");
+//                      System.out.print(arr[k]+" ");
                         sub_arr_sum+= arr[k];
                     }
                     if(sub_arr_sum==target)
                     {
                         count++;
+                        for (int k=i; k<=j; k++)
+                        {
+                            System.out.print(arr[k]+" ");
+                            sub_arr_sum+= arr[k];
+                        }
+                        System.out.println();
                     }
                 }
             }

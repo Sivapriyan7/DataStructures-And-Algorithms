@@ -22,7 +22,7 @@ public class NumberPlate {
         {
             val = (val*10) + num.charAt(i)-'0';
         }
-//        System.out.println(val);
+        //System.out.println(val);
         while (val>10)
         {
             val = decreaseval(val);
@@ -33,7 +33,8 @@ public class NumberPlate {
         {
             System.out.println("Lucky Number");
         }
-        else {
+        else
+        {
             System.out.println("Not a Lucky Number");
         }
     }
