@@ -1,5 +1,4 @@
 package Coding_Problems.TCS;
-
 import java.util.Scanner;
 
 public class FoodQuantity {
@@ -21,16 +20,26 @@ public class FoodQuantity {
         }
         //col = col%2;
 
-        System.out.println("col "+col);
-        if(num%2==col%2)
+//        System.out.println("col "+col);
+        if(row%2==1)
         {
-            System.out.println("Tree is plant");
+            if(num%2==col%2)
+            {
+                System.out.println("Tree is plant");
+            }
+            else {
+                System.out.println("Tree is not plant");
+            }
         }
         else {
-            System.out.println("Tree is not plant");
+            if(num%2==0)
+            {
+                System.out.println("Tree is not plant");
+            }
+            else {
+                System.out.println("Tree is plant");
+            }
         }
+
     }
-
-
-
 }
