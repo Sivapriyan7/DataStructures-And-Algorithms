@@ -22,7 +22,6 @@ class SubsetsWithSumK {
         if (sum == k) {
             System.out.println(subset);
         }
-
         // Explore all subsets starting from the current index
         for (int i = index; i < arr.length; i++) {
             subset.add(arr[i]);
