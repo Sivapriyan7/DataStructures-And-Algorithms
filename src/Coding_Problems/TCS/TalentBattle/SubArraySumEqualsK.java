@@ -1,6 +1,5 @@
-package Coding_Problems.TCS;
+package Coding_Problems.TCS.TalentBattle;
 
-import java.awt.desktop.SystemSleepEvent;
 import java.util.Scanner;
 
 public class SubArraySumEqualsK {

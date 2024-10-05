@@ -1,6 +1,5 @@
-package Coding_Problems.TCS;
+package Coding_Problems.TCS.TalentBattle;
 
-import javax.xml.transform.Source;
 import java.util.Scanner;
 
 public class FakePallindromeSubstring {
@@ -8,6 +7,7 @@ public class FakePallindromeSubstring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
+        int val = sc.nextInt();
         int count = 0;
 
         for (int i=0; i<str.length(); i++)

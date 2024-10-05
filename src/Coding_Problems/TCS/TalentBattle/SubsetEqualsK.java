@@ -1,4 +1,4 @@
-package Coding_Problems.TCS;
+package Coding_Problems.TCS.TalentBattle;
 
 import java.util.ArrayList;
 import java.util.List;
